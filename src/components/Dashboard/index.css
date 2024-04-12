@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .main-container{
+        @apply flex flex-row
+        bg-gray-900 text-white;
+    }
+    .chart-title{
+        @apply text-2xl font-semibold;
+    }
+
+    .dashboard-container{
+        @apply p-5 w-4/5 flex flex-col justify-around items-center max-md:w-full;
+    }
+}

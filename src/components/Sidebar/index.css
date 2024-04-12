@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .sidebar-container{
+        @apply w-1/5 p-3
+         bg-neutral-800 text-white min-h-screen 
+         rounded-tr-lg rounded-br-lg
+        flex flex-col justify-between items-center
+        max-sm:hidden;
+    }
+
+    .website-logo{
+        @apply w-1/4 m-2 cursor-pointer;
+    }
+
+    .sidebar-search-container{
+        @apply w-11/12 bg-zinc-600 rounded-md p-1 mb-4
+        flex flex-row justify-start items-center;
+    }
+
+    .sidebar-search-input{
+     @apply border-0 p-1 m-1 outline-none
+     rounded-md bg-transparent;
+    }
+
+    .sidebar-item-container{
+        @apply  mt-5 w-11/12 rounded-md p-2 mb-4
+        flex flex-row justify-start items-center
+        cursor-pointer
+        hover:md:bg-zinc-600
+        transition-all duration-300;    
+    }
+
+    .sidebar-item-name{
+        @apply  ml-5 font-medium;
+    }
+
+    .active-tab{
+        @apply text-orange-400;
+    }
+
+}

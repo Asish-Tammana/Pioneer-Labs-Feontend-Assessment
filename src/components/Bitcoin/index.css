@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bitcoin-container{
+        @apply p-5 text-center w-4/5 min-h-screen max-md:w-full
+    }
+
+    .bitcoin-container-title{
+        @apply text-3xl font-medium
+    }
+
+    .currency-cards-container{
+        @apply flex flex-row justify-around items-center p-5 max-md:flex-col max-md:justify-center max-md:w-full
+    }
+
+    .currency-card{
+        @apply bg-neutral-800 m-2 w-3/12 p-3 rounded-lg max-md:w-11/12;
+    }
+
+    .card-title{
+        @apply text-xl mb-3
+    }
+
+
+}
